@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <title>Chuyển Tiếp Trang</title>
+    <script>
+        function layThamSoURL() {
+            var urlParams = new URLSearchParams(window.location.search);
+            var url = urlParams.get('url');
+            if (url) {
+                chuyenTrang("https://mofile.cc/"+url);
+            }
+        }
+        function chuyenTrang(url) {
+            window.location.href = url;
+        }
+        layThamSoURL();
+    </script>
+</head>
+<body>
+    <h1>Vui lòng đợi chuyển tiếp tới trang lấy mật khẩu ........</h1>
+</body>
+</html>
